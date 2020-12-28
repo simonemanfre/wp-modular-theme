@@ -1,0 +1,128 @@
+{
+    "key": "group_5c27f06aae1ed",
+    "title": "Colori",
+    "fields": [
+        {
+            "key": "field_5c27f09fd01d8",
+            "label": "Colore Testo",
+            "name": "color_text",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000"
+        },
+        {
+            "key": "field_5c27f115d01d9",
+            "label": "Colore Principale",
+            "name": "color_primary",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#0c40a5"
+        },
+        {
+            "key": "field_5c27f3bee1138",
+            "label": "Colore Secondario",
+            "name": "color_secondary",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#0c40a5"
+        },
+        {
+            "key": "field_5c27f2a6b14c4",
+            "label": "Colore Link",
+            "name": "color_link",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#0c40a5"
+        },
+        {
+            "key": "field_5c27f438e113a",
+            "label": "Colore Pulsanti",
+            "name": "color_button",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff"
+        },
+        {
+            "key": "field_5c27f410e1139",
+            "label": "Sfondo Pulsanti",
+            "name": "bg_button",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#0c40a5"
+        },
+        {
+            "key": "field_5c562ad51a997",
+            "label": "Hover Pulsanti",
+            "name": "hover_button",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#0c40a5"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-typography"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": ""
+}
