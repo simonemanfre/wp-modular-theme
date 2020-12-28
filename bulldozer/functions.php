@@ -8,7 +8,7 @@ require_once(THEME_DIR . 'lib/trap/scripts.php');
 require_once(THEME_DIR . 'lib/trap/utility.php');
 require_once(THEME_DIR . 'lib/trap/wp-gallery.php');
 require_once(THEME_DIR . 'lib/trap/shortcodes.php');
-
+require_once(THEME_DIR . 'inc/trapstudio/blocks.php');
 
 //MENU
 add_theme_support( 'nav-menus' );
@@ -21,33 +21,6 @@ if ( function_exists( 'register_nav_menus' ) ) {
 //THUMBNAILS
 add_theme_support('post-thumbnails' );
 //add_image_size('customThumbSize', 180, 120, true);
-
-
-// ACF 
-if( function_exists('acf_add_options_page') ) {
-	// PAGE OPTION
-	$parent = acf_add_options_page(array(
-		'page_title' 	=> 'Opzioni Tema',
-		'menu_slug' 	=> 'acf-options',
-		'redirect' 		=> false
-	));	
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Contatti',
-		'menu_slug' 	=> 'acf-contact',
-		'parent_slug' 	=> $parent['menu_slug'],
-	));
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Colori & Font',
-		'menu_slug' 	=> 'acf-typography',
-		'parent_slug' 	=> $parent['menu_slug'],
-	));
-    
-    // API KEY
-    function my_acf_init() {
-        acf_update_setting('google_api_key', get_field('api', 'option'));
-    }
-    add_action('acf/init', 'my_acf_init');
-}
 
 
 //CF7
