@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
     objectFitImages();
   }
 
+  //MENU
   jQuery(".j-toggle").click(function () {
     jQuery("body").toggleClass("j-menu-open");
   });
