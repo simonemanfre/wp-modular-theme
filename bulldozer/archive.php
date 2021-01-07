@@ -5,6 +5,8 @@ $post = get_post($news);
 setup_postdata($post);
 ?>
 
+    <?php the_content() ?>
+
     <?php get_template_part('part', 'composer'); ?>
 
 <?php 
