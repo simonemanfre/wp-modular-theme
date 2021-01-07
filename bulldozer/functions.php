@@ -3,11 +3,11 @@
 define( 'THEME_URL', get_template_directory_uri() . '/' );
 define( 'THEME_DIR', dirname(__FILE__).'/' );
 
-require_once(THEME_DIR . 'lib/trap/security.php');
-require_once(THEME_DIR . 'lib/trap/scripts.php');
-require_once(THEME_DIR . 'lib/trap/utility.php');
-require_once(THEME_DIR . 'lib/trap/wp-gallery.php');
-require_once(THEME_DIR . 'lib/trap/shortcodes.php');
+require_once(THEME_DIR . 'inc/trapstudio/security.php');
+require_once(THEME_DIR . 'inc/trapstudio/scripts.php');
+require_once(THEME_DIR . 'inc/trapstudio/utility.php');
+require_once(THEME_DIR . 'inc/trapstudio/wp-gallery.php');
+require_once(THEME_DIR . 'inc/trapstudio/shortcodes.php');
 require_once(THEME_DIR . 'inc/trapstudio/blocks.php');
 
 //MENU
@@ -88,7 +88,7 @@ function the_debug_timestamp(){
 
 
 //REQUIRED PLUGIN
-require_once(THEME_DIR . 'lib/plugins/class-tgm-plugin-activation.php');
+require_once(THEME_DIR . 'inc/plugins/class-tgm-plugin-activation.php');
 
 add_action( 'tgmpa_register', 'bulldozer_register_required_plugins' );
 
@@ -136,7 +136,7 @@ function bulldozer_register_required_plugins() {
 		array(
 			'name'               => 'Advanced Custom Fields Pro',
 			'slug'               => 'advanced-custom-fields-pro',
-			'source'             => THEME_DIR . 'lib/plugins/advanced-custom-fields-pro.zip',
+			'source'             => THEME_DIR . 'inc/plugins/advanced-custom-fields-pro.zip',
 			'required'           => true,
 		),
 	);

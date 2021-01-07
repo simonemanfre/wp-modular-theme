@@ -31,7 +31,7 @@ if( function_exists('acf_add_options_page') ) {
                 'title'				=> __('Hero'),
                 'render_callback'	=> 'my_acf_block_render_callback',
                 'category'			=> 'formatting',
-                'icon'				=> 'button', //https://developer.wordpress.org/resource/dashicons/#table-col-before
+                'icon'				=> 'schedule', //https://developer.wordpress.org/resource/dashicons/#table-col-before
             ));
             
         }
