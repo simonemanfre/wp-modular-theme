@@ -30,7 +30,7 @@ if( function_exists('acf_add_options_page') ) {
                 'name'				=> 'hero',
                 'title'				=> __('Hero'),
                 'render_callback'	=> 'my_acf_block_render_callback',
-                'category'			=> 'formatting',
+                'category'			=> 'custom',
                 'icon'				=> 'schedule', //https://developer.wordpress.org/resource/dashicons/#table-col-before
             ));
             
@@ -38,6 +38,20 @@ if( function_exists('acf_add_options_page') ) {
     }
     add_action('acf/init', 'my_acf_init');
 }
+
+function bulldozer_block_categories( $categories, $post ) {
+    return array_merge(
+		array(
+            array(
+                'slug' => 'custom',
+                'title' => __( 'Custom Blocks', 'bulldozer' ),
+                'icon'  => 'wordpress',
+            ),
+        ),
+        $categories
+    );
+}
+add_filter( 'block_categories', 'bulldozer_block_categories', 10, 2 );
 
 function my_acf_block_render_callback( $block ) {
 	
