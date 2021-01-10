@@ -2,7 +2,9 @@
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-        <?php the_content() ?>
+        <div class="l-container">
+            <?php the_content() ?>
+        </div>
 
         <?php get_template_part('part', 'composer'); ?>
         

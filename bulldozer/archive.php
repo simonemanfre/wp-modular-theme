@@ -5,7 +5,9 @@ $post = get_post($news);
 setup_postdata($post);
 ?>
 
-    <?php the_content() ?>
+    <div class="l-container">
+        <?php the_content() ?>
+    </div>
 
     <?php get_template_part('part', 'composer'); ?>
 
