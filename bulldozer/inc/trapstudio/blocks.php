@@ -90,6 +90,14 @@ if( function_exists('acf_add_options_page') ) {
             ));
             
             acf_register_block(array(
+                'name'				=> 'list',
+                'title'				=> __('Lista'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'editor-ul',
+            ));
+            
+            acf_register_block(array(
                 'name'				=> 'card',
                 'title'				=> __('Card'),
                 'render_callback'	=> 'my_acf_block_render_callback',
