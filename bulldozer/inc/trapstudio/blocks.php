@@ -25,13 +25,108 @@ if( function_exists('acf_add_options_page') ) {
         // check function exists
         if( function_exists('acf_register_block') ) {
             
-            // Hero
             acf_register_block(array(
                 'name'				=> 'hero',
                 'title'				=> __('Hero'),
                 'render_callback'	=> 'my_acf_block_render_callback',
                 'category'			=> 'custom',
-                'icon'				=> 'schedule', //https://developer.wordpress.org/resource/dashicons/#table-col-before
+                'icon'				=> 'cover-image', //https://developer.wordpress.org/resource/dashicons/
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'page-header',
+                'title'				=> __('Page Header'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'welcome-widgets-menus',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'call-to-action',
+                'title'				=> __('Call To Action'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'admin-links',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'header',
+                'title'				=> __('Intestazione'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'heading',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'text',
+                'title'				=> __('Blocco di testo'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'editor-alignleft',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'image',
+                'title'				=> __('Immagine'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'format-image',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'video',
+                'title'				=> __('Video'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'format-video',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'media-text',
+                'title'				=> __('Blocco testo + immagine'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'align-pull-left',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'card',
+                'title'				=> __('Card'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'id',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'form',
+                'title'				=> __('Form'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'forms',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'mappa',
+                'title'				=> __('Mappa'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'post-status',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'partner',
+                'title'				=> __('Partner'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'businessman',
+            ));
+            
+            acf_register_block(array(
+                'name'				=> 'slider',
+                'title'				=> __('Slider'),
+                'render_callback'	=> 'my_acf_block_render_callback',
+                'category'			=> 'custom',
+                'icon'				=> 'slides',
             ));
             
         }
