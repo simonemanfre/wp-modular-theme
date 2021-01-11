@@ -713,22 +713,22 @@ textarea::-webkit-input-placeholder {
 }
 /*UTILITY*/
 .u-full {
-  width: 100%;
+  width: 100% !important;
 }
 .u-wide-full {
-  left: 50%;
-  width: 100vw;
-  margin-left: -50vw;
+  left: 50% !important;
+  width: 100vw !important;
+  margin-left: -50vw !important;
 }
 .u-wide-left {
-  margin-left: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw) !important;
 }
 .u-wide-right {
-  margin-right: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw) !important;
 }
 .u-width-big {
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -20px !important;
+  margin-right: -20px !important;
 }
 .u-width-small {
   max-width: 750px;
