@@ -4,7 +4,7 @@
  */ 
 ?>
 
-<header class="c-hero c-hero--<?php the_field('style') ?>">
+<header class="c-hero c-hero--<?php the_field('style') ?> u-wide-full">
     <?php 
     $file = get_field('bg');
     if($file['type'] == 'image'): 
