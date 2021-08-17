@@ -1,35 +1,9 @@
 {
-    "key": "group_5ff765937b5cd",
-    "title": "Call To Action",
+    "key": "group_5ffb8962eb98d",
+    "title": "Blocco Testo + Immagine",
     "fields": [
         {
-            "key": "field_5ffcdd0fae70b",
-            "label": "Stile",
-            "name": "style",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "c-cta--big": "Con immagine di sfondo intera",
-                "c-cta--image": "Con Immagine di sfondo affiancata",
-                "c-cta--small": "Senza immagine di sfondo"
-            },
-            "default_value": "c-cta--big",
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
-            "key": "field_5ffb8d761e8ab",
+            "key": "field_5ffb8a4e920c1",
             "label": "Dimensione",
             "name": "width",
             "type": "select",
@@ -58,7 +32,7 @@
             "placeholder": ""
         },
         {
-            "key": "field_5ffcde83ae70c",
+            "key": "field_5ffb89972efd2",
             "label": "Allineamento",
             "name": "align",
             "type": "select",
@@ -71,11 +45,10 @@
                 "id": ""
             },
             "choices": {
-                "u-is-centered": "Testo Centrato",
-                "u-is-left": "Testo a Sinistra",
-                "u-is-right": "Testo a Destra"
+                "u-image-left": "Immagine a Sinistra",
+                "u-image-right": "Immagine a destra"
             },
-            "default_value": "u-is-centered",
+            "default_value": false,
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -84,21 +57,13 @@
             "placeholder": ""
         },
         {
-            "key": "field_5ffb7fee16f20",
-            "label": "Sfondo",
-            "name": "bg",
+            "key": "field_5ffb897c2efd1",
+            "label": "Immagine",
+            "name": "img",
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5ffcdd0fae70b",
-                        "operator": "!=",
-                        "value": "c-cta--small"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -116,7 +81,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_5ffb7fe516f1f",
+            "key": "field_5ffb89a92efd3",
             "label": "Titolo",
             "name": "title",
             "type": "text",
@@ -135,9 +100,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5ffb7ffe16f21",
-            "label": "Testo",
-            "name": "text",
+            "key": "field_5ffb89af2efd4",
+            "label": "Sottotitolo",
+            "name": "subtitle",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -154,10 +119,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_5ffb803016f24",
-            "label": "Form",
-            "name": "form",
-            "type": "post_object",
+            "key": "field_5ffb89b62efd5",
+            "label": "Testo",
+            "name": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -166,17 +131,14 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "wpcf7_contact_form"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 0,
-            "return_format": "id",
-            "ui": 1
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
-            "key": "field_5ffb801016f22",
+            "key": "field_5ffb89c22efd6",
             "label": "Etichetta Pulsante",
             "name": "button",
             "type": "text",
@@ -195,7 +157,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5ffb801b16f23",
+            "key": "field_5ffb89cd2efd7",
             "label": "Link Pulsante",
             "name": "url",
             "type": "text",
@@ -219,7 +181,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/call-to-action"
+                "value": "acf\/media-text"
             }
         ]
     ],
@@ -231,5 +193,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1629220754
+    "modified": 1629220750
 }
