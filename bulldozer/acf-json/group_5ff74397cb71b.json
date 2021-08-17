@@ -122,7 +122,7 @@
         {
             "key": "field_5ff74475f51fe",
             "label": "Link Pulsante",
-            "name": "link_pulsante",
+            "name": "url",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -164,5 +164,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1610042048
+    "modified": 1629221052
 }

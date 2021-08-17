@@ -1,7 +1,69 @@
 {
     "key": "group_5ffa3daa4810e",
-    "title": "Partner",
-    "fields": [],
+    "title": "Partners",
+    "fields": [
+        {
+            "key": "field_5ffb80c301521",
+            "label": "Partners",
+            "name": "partners",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Aggiungi Partner",
+            "sub_fields": [
+                {
+                    "key": "field_5ffb80eb01522",
+                    "label": "Immagine",
+                    "name": "img",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5ffb810001523",
+                    "label": "Link",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
     "location": [
         [
             {
@@ -19,5 +81,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1610235322
+    "modified": 1629221285
 }
