@@ -167,4 +167,7 @@ function my_acf_block_render_callback( $block ) {
 	}
 }
 
-?>
+//REMOVE ADMIN BAR FOR ADMINISTRATOR IF OPTION FIELD IS CHECKED
+if(!is_admin() && current_user_can('administrator') && get_field('admin_bar', 'option')){
+    add_filter('show_admin_bar', '__return_false');
+}

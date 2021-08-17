@@ -34,5 +34,3 @@
         wp_enqueue_style( 'admin', get_template_directory_uri() . '/admin.css', array(), null);
     }
     add_action( 'admin_enqueue_scripts', 'admin_scripts' );
-    	
-?>

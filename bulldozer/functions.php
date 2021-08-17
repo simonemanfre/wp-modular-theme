@@ -5,10 +5,19 @@ define( 'THEME_DIR', dirname(__FILE__).'/' );
 
 require_once(THEME_DIR . 'inc/trapstudio/security.php');
 require_once(THEME_DIR . 'inc/trapstudio/scripts.php');
-require_once(THEME_DIR . 'inc/trapstudio/utility.php');
-require_once(THEME_DIR . 'inc/trapstudio/wp-gallery.php');
-require_once(THEME_DIR . 'inc/trapstudio/shortcodes.php');
-require_once(THEME_DIR . 'inc/trapstudio/blocks.php');
+
+//DISABLE COMMENTS
+require_once(THEME_DIR . 'inc/trapstudio/comments.php');
+
+//ACF
+if( function_exists('acf_add_options_page') ):
+    require_once(THEME_DIR . 'inc/trapstudio/acf.php');
+endif;
+
+//WOOCOMMERCE
+if( class_exists('woocommerce') ):
+    require_once(THEME_DIR . 'inc/trapstudio/woocommerce.php');
+endif;
 
 //MENU
 add_theme_support( 'nav-menus' );
@@ -43,16 +52,6 @@ if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
 }
 */
 
-// REMOVE ADMIN BAR
-if( function_exists('acf_add_options_page') ) {
-    function remove_admin_bar(){
-        return false;
-    }
-    if(!is_admin() && current_user_can('administrator') && get_field('admin_bar', 'option')){
-        add_filter('show_admin_bar', 'remove_admin_bar');
-    }
-}
-
 
 // LOGIN CUSTOM LOGO
 function my_login_logo_url() {
@@ -72,19 +71,6 @@ function cc_mime_types($mimes) {
     return $mimes;
     }
 add_filter('upload_mimes', 'cc_mime_types');
-
-
-//RESPONSIVE EMBEDS
-add_filter('embed_oembed_html', 'bs_embed_oembed_html', 99, 4);
-function bs_embed_oembed_html($html, $url, $attr, $post_id) {
-  return '<div class="embed-responsive embed-responsive-16by9">' . $html . '</div>';
-}
-
-
-//TIMESTAMP
-function the_debug_timestamp(){
-    echo date("YmdHis");
-}
 
 
 //REQUIRED PLUGIN

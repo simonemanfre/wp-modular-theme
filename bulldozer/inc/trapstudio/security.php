@@ -1,6 +1,5 @@
 <?php
 
-
 function ws_whitelabel(){
 	remove_action('wp_head', 'rsd_link');
 	remove_action('wp_head', 'wp_generator');
@@ -149,5 +148,3 @@ add_filter('mod_rewrite_rules', 'ws_htaccess');
 //------
 ws_whitelabel();
 ws_xmlrpc_disable();
-
-?>
