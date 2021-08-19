@@ -24,61 +24,18 @@
 	<?php wp_head(); ?>
 
     <style>
-    html, input, select, textarea {
-        font-family: '<?php echo $body_font['label'] ?>', sans-serif;
-        font-size: <?php the_field('font_mobile', 'option') ?>px;
-    }
-    html, p, input, select, textarea {
-        color: <?php the_field('color_text', 'option') ?>;
-    }
-    h1, h2, h3, h4, h5, h6, .c-title, .c-subtitle, .c-button, .c-site-header__nav__menu li {
-        font-family: '<?php echo $title_font['label'] ?>', sans-serif;
-    }
-    .c-title{
-        color: <?php the_field('color_primary', 'option') ?>;
-    }
-    .c-subtitle{
-        color: <?php the_field('color_secondary', 'option') ?>;
-    }
-    a, a:hover {
-        color: <?php the_field('color_link', 'option') ?>;
-    }
-    .c-site-header.j-sticky .c-site-header__nav__menu li a::after {
-        background-color: <?php the_field('color_link', 'option') ?>;;
-    }
-    .c-site-header__nav__menu li.current-menu-item a {
-        background-color: <?php the_field('color_link', 'option') ?>;;
-        color: #fff;
-    }
-    .c-button, body .c-button--ghost:hover {
-        color: <?php the_field('color_button', 'option') ?>;
-        background-color: <?php the_field('bg_button', 'option') ?>;
-        border: 1px solid <?php the_field('bg_button', 'option') ?>;
-    }
-    .c-button:hover{
-        color: <?php the_field('color_button', 'option') ?>;
-        background-color: <?php the_field('hover_button', 'option') ?>;
-        border-color: <?php the_field('hover_button', 'option') ?>;
-    }
-    .c-button--ghost {
-        color: <?php the_field('bg_button', 'option') ?>;
-    }
-    .c-form__field input, .c-form__field textarea, .c-select-container {
-        border-color: <?php the_field('bg_button', 'option') ?>;
-    }
-    .c-hero::before, .c-cta::before, .c-content-block__header--background, .c-content-block__header--background::after, .c-text-item--inline::before, .c-site-footer {
-        background-color: <?php the_field('color_primary', 'option') ?>;
-    }
-    .j-menu-open .c-site-header__toggle__item, .c-site-header.j-sticky .c-site-header__toggle__item, .c-text-item--inline .c-text-item__header{
-        border-color: <?php the_field('color_primary', 'option') ?>;
-    }
-    @media screen and (min-width:1024px) {
-        html {
-            font-size: <?php the_field('font_desktop', 'option') ?>px;
-        }
-        .c-site-header.j-sticky .c-site-header__nav__menu li a {
-            color: <?php the_field('color_link', 'option') ?>;
-        }
+    :root {
+        --text-font-family: '<?php echo $body_font['label'] ?>', sans-serif;
+        --title-font-family: '<?php echo $title_font['label'] ?>', sans-serif;
+        --mobile-font-size: <?php the_field('font_mobile', 'option') ?>px;
+        --desktop-font-size: <?php the_field('font_desktop', 'option') ?>px;
+        --color-text: <?php the_field('color_text', 'option') ?>;
+        --color-primary: <?php the_field('color_primary', 'option') ?>;
+        --color-secondary: <?php the_field('color_secondary', 'option') ?>;
+        --color-link: <?php the_field('color_link', 'option') ?>;
+        --color-button: <?php the_field('color_button', 'option') ?>;
+        --bg-button: <?php the_field('bg_button', 'option') ?>;
+        --hover-button: <?php the_field('hover_button', 'option') ?>;
     }
     </style>
     

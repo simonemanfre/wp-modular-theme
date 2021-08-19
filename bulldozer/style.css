@@ -2,9 +2,93 @@
 Theme Name: Bulldozer
 Author: Simone Manfredini
 Author URI: http://www.webdesignsimone.it/
-Version: 1.0
+Version: 1.1
 Text Domain: bulldozer
 */
+/*CSS CUSTOM PROPERTIES*/
+:root {
+  --text-font-family: "Roboto", sans-serif;
+  --title-font-family: "Montserrat", sans-serif;
+  --mobile-font-size: 14px;
+  --desktop-font-size: 16px;
+  --color-text: #000;
+}
+html,
+input,
+select,
+textarea {
+  font-family: var(--text-font-family);
+  font-size: var(--mobile-font-size);
+}
+html,
+p,
+input,
+select,
+textarea {
+  color: var(--color-text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.c-title,
+.c-subtitle,
+.c-button,
+.c-site-header__nav__menu li {
+  font-family: var(--title-font-family);
+}
+.c-title {
+  color: var(--color-primary);
+}
+.c-subtitle {
+  color: var(--color-secondary);
+}
+a,
+a:hover {
+  color: var(--color-link);
+}
+.c-site-header.j-sticky .c-site-header__nav__menu li a::after {
+  background-color: var(--color-link);
+}
+.c-site-header__nav__menu li.current-menu-item a {
+  color: #fff;
+  background-color: var(--color-link);
+}
+.c-button,
+body .c-button--ghost:hover {
+  color: var(--color-button);
+  background-color: var(--bg-button);
+  border: 1px solid var(--bg-button);
+}
+.c-button:hover {
+  color: var(--color-button);
+  background-color: var(--hover-button);
+  border-color: var(--hover-button);
+}
+.c-button--ghost {
+  color: var(--bg-button);
+}
+.c-form__field input,
+.c-form__field textarea,
+.c-select-container {
+  border-color: var(--bg-button);
+}
+.c-hero::before,
+.c-cta::before,
+.c-content-block__header--background,
+.c-content-block__header--background::after,
+.c-text-item--inline::before,
+.c-site-footer {
+  background-color: var(--color-primary);
+}
+.j-menu-open .c-site-header__toggle__item,
+.c-site-header.j-sticky .c-site-header__toggle__item,
+.c-text-item--inline .c-text-item__header {
+  border-color: var(--color-primary);
+}
+/*BODY*/
 body {
   line-height: 1.4;
   margin: 0;
@@ -13,7 +97,6 @@ main {
   overflow-x: hidden;
 }
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 a,
@@ -109,7 +192,6 @@ body.j-menu-open {
   top: 60px;
   right: 12px;
   padding: 5px 8px;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 10;
 }
@@ -119,7 +201,6 @@ body.j-menu-open {
   border-top: 2px solid #fff;
   border-radius: 10px;
   margin: 5px 0 5px auto;
-  -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
 .c-site-header__nav {
@@ -130,7 +211,6 @@ body.j-menu-open {
   bottom: 100%;
   background-color: #fff;
   overflow: auto;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   z-index: 9;
 }
@@ -157,12 +237,10 @@ body.j-menu-open {
 }
 .j-menu-open .c-site-header__toggle__item:first-of-type {
   opacity: 1;
-  -webkit-transform: rotate(-45deg) translate(-6px, 5px);
   transform: rotate(-45deg) translate(-6px, 5px);
 }
 .j-menu-open .c-site-header__toggle__item:last-of-type {
   opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-4px, -4px);
   transform: rotate(45deg) translate(-4px, -4px);
 }
 .j-menu-open .c-site-header__nav {
@@ -173,7 +251,6 @@ body.j-menu-open {
   background-color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
 }
 .c-site-header.j-sticky .c-logo img {
@@ -231,7 +308,6 @@ body.j-menu-open {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 body .c-button--ghost {
@@ -305,7 +381,6 @@ body .c-button--ghost {
   left: 50%;
   width: 90%;
   text-align: center;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 1;
 }
@@ -364,7 +439,6 @@ body .c-button--ghost {
   bottom: -14px;
   width: 30px;
   height: 30px;
-  -webkit-transform: translateX(-50%) rotate(45deg);
   transform: translateX(-50%) rotate(45deg);
   z-index: -1;
 }
@@ -599,7 +673,6 @@ textarea::-webkit-input-placeholder {
   border: 2px solid #000;
   border-top: none;
   border-right: none;
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .c-form__field--checkbox label {
