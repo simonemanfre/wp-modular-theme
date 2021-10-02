@@ -88,10 +88,13 @@ body .c-button--ghost:hover {
 .c-text-item--inline .c-text-item__header {
   border-color: var(--color-primary);
 }
-/*BODY*/
+/*RESET*/
 body {
   line-height: 1.4;
+  font-weight: 400;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 main {
   overflow-x: hidden;
@@ -121,10 +124,6 @@ p:first-child {
 p:last-child {
   margin-bottom: 0 !important;
 }
-fieldset {
-  padding: 0;
-  margin: 0;
-}
 ul {
   list-style: none;
   padding: 0;
@@ -137,12 +136,33 @@ img {
   max-width: 100%;
   height: auto;
 }
+fieldset {
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+button,
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+}
+button,
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 blockquote {
   margin: 0;
 }
 iframe {
   width: 100%;
 }
+/*WORDPRESS*/
 .alignleft {
   display: block;
   margin-bottom: 10px;
@@ -159,9 +179,6 @@ iframe {
 .error404 .c-page-header,
 .error404 .c-content__text {
   text-align: center;
-}
-.l-container > * {
-  font-size: 1rem;
 }
 /*HEADER*/
 body.j-menu-open {
@@ -324,18 +341,19 @@ body .c-button--ghost {
 }
 /*LAYOUT*/
 .l-container {
-  width: 100%;
-  font-size: 0;
   padding-left: 20px;
   padding-right: 20px;
 }
-.l-container::before,
-.l-container::after {
-  content: " ";
-  display: table;
+.l-container--fullwidth {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-.l-container::after {
-  clear: both;
+/*
+OLD CONTAINER WITH PADDING
+.l-container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .l-container--small {
   max-width: 750px;
@@ -354,6 +372,7 @@ body .c-button--ghost {
 .l-container--right {
   padding-right: 0 !important;
 }
+*/
 /*HERO*/
 .c-hero {
   position: relative;

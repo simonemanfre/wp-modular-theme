@@ -36,13 +36,14 @@
   }
 }
 @media screen and (min-width: 768px) {
+  /*WORDPRESS*/
   .alignleft {
-    margin-right: 50px;
+    margin-right: 20px;
     float: left;
     clear: left;
   }
   .alignright {
-    margin-left: 50px;
+    margin-left: 20px;
     float: right;
     clear: right;
   }
@@ -171,8 +172,20 @@
   }
   /*LAYOUT*/
   .l-container {
+    max-width: 1400px;
     padding-left: 30px;
     padding-right: 30px;
+    margin: 0 auto;
+  }
+  .l-container--small {
+    max-width: 1200px;
+  }
+  .l-container--big {
+    max-width: 1600px;
+  }
+  .l-container--wide,
+  .l-container--fullwidth {
+    max-width: none;
   }
   .l-2col,
   .l-3col {
@@ -356,6 +369,8 @@
     margin-right: -60px !important;
   }
 }
+/*
+OLD CONTAINER WITH PADDING
 @media screen and (min-width: 1500px) {
   .l-container {
     padding-left: 11vw;
@@ -368,3 +383,4 @@
     padding-right: 16vw;
   }
 }
+*/
