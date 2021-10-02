@@ -32,52 +32,14 @@ if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus( array('Footer' => __( 'Navigazione footer') ) );
 }
 
-
 //THUMBNAILS
 add_theme_support('post-thumbnails' );
 //add_image_size('customThumbSize', 180, 120, true);
 
-
 //CF7
 if (function_exists('wpcf7')) {
 	add_filter('wpcf7_autop_or_not', '__return_false');
-	//RIMUOVO STILE E SCRIPT CF7 OVUNQUE
-    //add_filter( 'wpcf7_load_js', '__return_false' );
-    //add_filter( 'wpcf7_load_css', '__return_false' );
 }
-
-/*
-** PER REGISTRARE CF7 NEI TEMPLATE IN CUI È USATO
-
-//REGISTRO FILE E SCRIPT CF7 IN QUESTO TEMPLATE
-if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
-    wpcf7_enqueue_scripts();
-}
-if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
-    wpcf7_enqueue_styles();
-}
-*/
-
-
-// LOGIN CUSTOM LOGO
-function my_login_logo_url() {
-    return 'http://www.webdesignsimone.it/';
-}
-add_filter( 'login_headerurl', 'my_login_logo_url' );
-
-function my_login_logo_url_title() {
-    return 'Realizzato da Simone Manfredini';
-}
-add_filter( 'login_headertitle', 'my_login_logo_url_title' );
-
-
-//SVG UPLOAD
-function cc_mime_types($mimes) {
-    $mimes['svg'] = 'image/svg+xml';
-    return $mimes;
-    }
-add_filter('upload_mimes', 'cc_mime_types');
-
 
 //REQUIRED PLUGIN
 require_once(THEME_DIR . 'inc/plugins/class-tgm-plugin-activation.php');
@@ -88,11 +50,6 @@ function bulldozer_register_required_plugins() {
 
 	$plugins = array(
 		// This is an example of how to include a plugin from the WordPress Plugin Repository.
-		array(
-			'name'      => 'Custom Post Type UI',
-			'slug'      => 'custom-post-type-ui',
-			'required'  => false,
-        ),
 		array(
 			'name'      => 'Contact Form 7',
 			'slug'      => 'contact-form-7',
@@ -148,5 +105,3 @@ function bulldozer_register_required_plugins() {
 
 	tgmpa( $plugins, $config );
 }
-
-?>

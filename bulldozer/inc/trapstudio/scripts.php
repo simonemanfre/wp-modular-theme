@@ -30,9 +30,3 @@
 		wp_enqueue_script('siteScripts');
 	}
     add_action( 'wp_enqueue_scripts', 'site_scripts_and_css' );
-
-
-    function admin_scripts() {
-        wp_enqueue_style( 'admin', get_template_directory_uri() . '/admin.css', array(), null);
-    }
-    add_action( 'admin_enqueue_scripts', 'admin_scripts' );
