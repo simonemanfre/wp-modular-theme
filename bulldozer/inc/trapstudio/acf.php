@@ -15,11 +15,11 @@ acf_add_options_sub_page(array(
     'updated_message'   => __("Opzioni aggiornate", 'acf'),
 ));	
 
-// API KEY
 function my_acf_init() {
+    // API KEY
     acf_update_setting('google_api_key', get_field('api', 'option'));
     
-    // check function exists
+    // GUTENBERG BLOCK REGISTRATION
     if( function_exists('acf_register_block') ) {
         
         acf_register_block(array(
@@ -138,7 +138,7 @@ function my_acf_init() {
 }
 add_action('acf/init', 'my_acf_init');
 
-
+// GUTENBERG CATEGORIES REGISTRATION
 function bulldozer_block_categories( $categories, $post ) {
     return array_merge(
 		array(

@@ -47,7 +47,7 @@
             </div>
             <div class="c-site-footer__disclaimer">
                 <div class="l-container">
-                    <small>&copy; <?php echo date('Y') ?> <?php bloginfo('name'); ?> - Developed by <a target="_blank" href="http://www.webdesignsimone.it/">Simone Manfredini</a></small>
+                    <small>&copy; <?php echo date('Y') ?> <?php bloginfo('name'); ?> - Developed by <a target="_blank" rel="noopner" href="https://wp-startup.com/">Simone Manfredini</a></small>
                 </div>
             </div>
         </footer>

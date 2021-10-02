@@ -5,6 +5,12 @@ define( 'THEME_DIR', dirname(__FILE__).'/' );
 
 require_once(THEME_DIR . 'inc/trapstudio/security.php');
 require_once(THEME_DIR . 'inc/trapstudio/scripts.php');
+require_once(THEME_DIR . 'inc/trapstudio/backoffice.php');
+
+/*
+//CUSTOM POST TYPE
+require_once(THEME_DIR . 'inc/trapstudio/cpt.php');
+*/
 
 //DISABLE COMMENTS
 require_once(THEME_DIR . 'inc/trapstudio/comments.php');
