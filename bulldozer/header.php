@@ -58,7 +58,7 @@
                 <?php echo wp_get_attachment_image(get_field('contact_logo', 'option'), 'large') ?>
             </a> 
             
-                <a class="c-site-header__toggle j-toggle">
+            <a class="c-site-header__toggle j-toggle">
                 <span class="c-site-header__toggle__item"></span>
                 <span class="c-site-header__toggle__item"></span>
                 <span class="c-site-header__toggle__item"></span>
@@ -67,14 +67,14 @@
             <nav class="c-site-header__nav">                          
                 <ul class="c-site-header__nav__menu">
                     <?php
-                        $args = array(
-                        'theme_location' => 'Primario',
-                        'depth'    => 1,
-                        'items_wrap' => '%3$s',
-                        'container' => ''
-                        );
+                    $args = array(
+                    'theme_location' => 'Primario',
+                    'depth'    => 1,
+                    'items_wrap' => '%3$s',
+                    'container' => ''
+                    );
 
-                        wp_nav_menu($args);
+                    wp_nav_menu($args);
                     ?>
                 </ul>
             </nav> 

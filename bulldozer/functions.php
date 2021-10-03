@@ -57,7 +57,7 @@ function bulldozer_register_required_plugins() {
         ),
 		array(
 			'name'      => 'Yoast SEO',
-			'slug'      => 'yoast-seo',
+			'slug'      => 'wordpress-seo',
 			'required'  => false,
 		),
 		array(

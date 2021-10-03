@@ -12,6 +12,12 @@ Text Domain: bulldozer
   --mobile-font-size: 14px;
   --desktop-font-size: 16px;
   --color-text: #000;
+  --color-primary: #0c40a5;
+  --color-secondary: #0c40a5;
+  --color-link: #0c40a5;
+  --color-button: #fff;
+  --bg-button: #0c40a5;
+  --hover-button: #0c40a5;
 }
 html,
 input,
