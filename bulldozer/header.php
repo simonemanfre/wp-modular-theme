@@ -37,6 +37,23 @@
         --bg-button: <?php the_field('bg_button', 'option') ?>;
         --hover-button: <?php the_field('hover_button', 'option') ?>;
     }
+    <?php if(!get_field('header_negative')): ?>
+        .c-site-header {
+        position: relative;
+        }
+        .c-site-header__toggle__item {
+        border-color: #0c40a5;
+        }
+        @media screen and (min-width: 1024px) {
+            .c-site-header__nav__menu li a {
+                color: #0c40a5 !important;
+            }
+            .c-site-header__nav__menu li.current-menu-item a::after,
+            .c-site-header__nav__menu li a:hover::after {
+                background-color: #0c40a5;
+            }
+        }
+    <?php endif; ?>
     </style>
     
     <?php if(get_field('css_custom', 'option')): ?>
