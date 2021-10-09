@@ -5,9 +5,6 @@
         $var_array = array();
 
         //FILE CSS
-        if( !function_exists( 'is_gutenberg_page' ) ) {
-            wp_dequeue_style('wp-block-library');
-        }
         wp_enqueue_style('normalize', get_template_directory_uri() . "/normalize.css", array(), $dati_tema->Version);
         wp_enqueue_style('icons', get_template_directory_uri() . "/icons.css", array('normalize'), $dati_tema->Version);
         wp_enqueue_style('slick', get_template_directory_uri() . "/slick.css", array('normalize'), $dati_tema->Version);

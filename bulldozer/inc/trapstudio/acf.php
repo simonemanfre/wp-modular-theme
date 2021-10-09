@@ -111,7 +111,7 @@ function my_acf_init() {
         ));
         
         acf_register_block(array(
-            'name'				=> 'mappa',
+            'name'				=> 'map',
             'title'				=> __('Mappa'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
@@ -151,7 +151,7 @@ function bulldozer_block_categories( $categories, $post ) {
         $categories
     );
 }   
-add_filter( 'block_categories', 'bulldozer_block_categories', 10, 2 );
+add_filter( 'block_categories_all', 'bulldozer_block_categories', 10, 2 );
 
 function my_acf_block_render_callback( $block ) {
 	
