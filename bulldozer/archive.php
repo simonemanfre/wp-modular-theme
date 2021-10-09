@@ -9,8 +9,6 @@ setup_postdata($post);
         <?php the_content() ?>
     </div>
 
-    <?php get_template_part('part', 'composer'); ?>
-
 <?php 
 wp_reset_postdata();
 get_footer(); 

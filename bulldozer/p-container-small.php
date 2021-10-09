@@ -7,8 +7,6 @@ get_header();
         <div class="l-container l-container--small">
             <?php the_content() ?>
         </div>
-
-        <?php get_template_part('part', 'composer'); ?>
         
     <?php endwhile; endif; ?>
 

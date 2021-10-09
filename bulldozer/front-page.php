@@ -6,8 +6,6 @@
             <?php the_content() ?>
         </div>
         
-        <?php get_template_part('part', 'composer'); ?>
-
     <?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
