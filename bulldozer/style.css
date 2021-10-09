@@ -2,7 +2,7 @@
 Theme Name: Bulldozer
 Author: Simone Manfredini
 Author URI: http://www.webdesignsimone.it/
-Version: 1.1
+Version: 1.05
 Text Domain: bulldozer
 */
 /*CSS CUSTOM PROPERTIES*/
@@ -83,8 +83,8 @@ body .c-button--ghost:hover {
 }
 .c-hero::before,
 .c-cta::before,
-.c-content-block__header--background,
-.c-content-block__header--background::after,
+.c-block-header--background,
+.c-block-header--background::after,
 .c-text-item--inline::before,
 .c-site-footer {
   background-color: var(--color-primary);
@@ -103,6 +103,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 main {
+  width: 100%;
   overflow-x: hidden;
 }
 * {
@@ -385,6 +386,7 @@ OLD CONTAINER WITH PADDING
   height: 40vh;
   min-height: 280px;
   color: #fff;
+  margin-bottom: -10px;
   overflow: hidden;
 }
 .c-hero::before {
@@ -432,33 +434,27 @@ OLD CONTAINER WITH PADDING
   font-size: 2.5rem;
   line-height: 1.2;
 }
-/*CONTENT BLOCK*/
-.c-content-block {
-  margin: 40px 0;
-}
-.c-hero + .c-content-block {
-  margin-top: 32px;
-}
-.c-content-block__header {
+/*BLOCK HEADER*/
+.c-block-header {
   position: relative;
   text-align: center;
   font-size: 1.1rem;
   line-height: 1.3;
   font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 20px;
   margin-bottom: 30px;
 }
-.c-content-block__header .c-title {
+.c-block-header .c-title {
 }
-.c-content-block__header .c-subtitle {
+.c-block-header .c-subtitle {
 }
-.c-content-block__header p {
-}
-.c-content-block__header--background {
+.c-block-header--background {
   color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.c-content-block__header--background::after {
+.c-block-header--background::after {
   content: "";
   position: absolute;
   bottom: -14px;
@@ -467,13 +463,13 @@ OLD CONTAINER WITH PADDING
   transform: translateX(-50%) rotate(45deg);
   z-index: -1;
 }
-.c-content-block__header--background .c-title {
+.c-block-header--background .c-title {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
 }
-.c-content-block__header--background .c-subtitle {
+.c-block-header--background .c-subtitle {
   color: #fff;
 }
 /*TEXT ITEM*/
@@ -814,6 +810,7 @@ textarea::-webkit-input-placeholder {
   width: 100% !important;
 }
 .u-wide-full {
+  position: relative;
   left: 50% !important;
   width: 100vw !important;
   margin-left: -50vw !important;
@@ -832,4 +829,28 @@ textarea::-webkit-input-placeholder {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
+}
+.u-is-left {
+  text-align: left !important;
+}
+.u-is-centered {
+  text-align: center !important;
+}
+.u-is-right {
+  text-align: right !important;
+}
+.u-flex-between {
+  justify-content: space-between !important;
+}
+.u-flex-center {
+  justify-content: center !important;
+}
+.u-flex-start {
+  align-items: flex-start !important;
+}
+.u-flex-middle {
+  align-items: center !important;
+}
+.u-flex-bottom {
+  align-items: flex-end !important;
 }
