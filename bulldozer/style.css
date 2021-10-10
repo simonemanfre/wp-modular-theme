@@ -187,6 +187,11 @@ iframe {
 .error404 .c-content__text {
   text-align: center;
 }
+/*WORDPRESS BLOCKS*/
+.wp-block-media-text,
+.wp-block-columns {
+  margin: 40px 0;
+}
 /*HEADER*/
 body.j-menu-open {
   overflow: hidden;
@@ -498,10 +503,6 @@ OLD CONTAINER WITH PADDING
   padding-bottom: 15px;
   border-bottom: 1px solid;
   margin-bottom: 20px;
-}
-/*MEDIA TEXT*/
-.wp-block-media-text {
-  margin: 40px 0;
 }
 /*CARD*/
 .c-card {
