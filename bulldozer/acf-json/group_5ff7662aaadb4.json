@@ -32,6 +32,35 @@
             "placeholder": ""
         },
         {
+            "key": "field_61623861571b4",
+            "label": "Dimensione",
+            "name": "width",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "u-full": "Si adatta al contenitore",
+                "u-wide-left": "A filo pagina sinistra",
+                "u-wide-right": "A filo pagina destra",
+                "u-wide-full": "A schermo intero",
+                "u-width-big": "Dimensione maggiore del contenitore",
+                "u-width-small": "Dimensione minore del contenitore"
+            },
+            "default_value": "u-full",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_5ffb834fb704b",
             "label": "Stile",
             "name": "style",
@@ -40,7 +69,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -154,7 +183,7 @@
                     "placeholder": "",
                     "maxlength": "",
                     "rows": 4,
-                    "new_lines": ""
+                    "new_lines": "wpautop"
                 },
                 {
                     "key": "field_5ffb84febe58f",
@@ -202,7 +231,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/card"
+                "value": "acf\/cards"
             }
         ]
     ],
@@ -214,5 +243,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1629220863
+    "modified": 1633827547
 }

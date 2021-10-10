@@ -125,14 +125,6 @@ function my_acf_init() {
         ));
         
         acf_register_block_type(array(
-            'name'				=> 'map',
-            'title'				=> __('Mappa'),
-            'render_callback'	=> 'my_acf_block_render_callback',
-            'category'			=> 'custom',
-            'icon'				=> 'post-status',
-        ));
-        
-        acf_register_block_type(array(
             'name'				=> 'partner',
             'title'				=> __('Partner'),
             'render_callback'	=> 'my_acf_block_render_callback',
