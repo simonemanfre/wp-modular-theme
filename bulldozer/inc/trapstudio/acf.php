@@ -35,7 +35,7 @@ function my_acf_init() {
             ),
             'icon'				=> 'cover-image', //https://developer.wordpress.org/resource/dashicons/
         ));
-        
+
         acf_register_block_type(array(
             'name'				=> 'hero',
             'title'				=> __('Hero'),
@@ -109,7 +109,7 @@ function my_acf_init() {
         ));
         
         acf_register_block_type(array(
-            'name'				=> 'card',
+            'name'				=> 'cards',
             'title'				=> __('Card'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
