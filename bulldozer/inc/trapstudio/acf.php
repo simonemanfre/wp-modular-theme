@@ -20,9 +20,23 @@ function my_acf_init() {
     acf_update_setting('google_api_key', get_field('api', 'option'));
     
     // GUTENBERG BLOCK REGISTRATION
-    if( function_exists('acf_register_block') ) {
+    if( function_exists('acf_register_block_type') ) {
         
-        acf_register_block(array(
+        acf_register_block_type(array(
+            'name'				=> 'layout',
+            'title'				=> __('Layout'),
+            'render_callback'	=> 'my_acf_block_render_callback',
+            'category'			=> 'custom',
+            'mode'              => 'preview',
+            'supports'          => array(
+                'align' => true,
+                'mode' => false,
+                'jsx' => true
+            ),
+            'icon'				=> 'cover-image', //https://developer.wordpress.org/resource/dashicons/
+        ));
+        
+        acf_register_block_type(array(
             'name'				=> 'hero',
             'title'				=> __('Hero'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -30,7 +44,7 @@ function my_acf_init() {
             'icon'				=> 'cover-image', //https://developer.wordpress.org/resource/dashicons/
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'page-header',
             'title'				=> __('Page Header'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -38,7 +52,7 @@ function my_acf_init() {
             'icon'				=> 'welcome-widgets-menus',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'call-to-action',
             'title'				=> __('Call To Action'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -46,7 +60,7 @@ function my_acf_init() {
             'icon'				=> 'admin-links',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'header',
             'title'				=> __('Intestazione'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -54,7 +68,7 @@ function my_acf_init() {
             'icon'				=> 'heading',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'text',
             'title'				=> __('Blocco di testo'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -62,7 +76,7 @@ function my_acf_init() {
             'icon'				=> 'editor-alignleft',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'image',
             'title'				=> __('Immagine'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -70,7 +84,7 @@ function my_acf_init() {
             'icon'				=> 'format-image',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'video',
             'title'				=> __('Video'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -78,7 +92,7 @@ function my_acf_init() {
             'icon'				=> 'format-video',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'media-text',
             'title'				=> __('Blocco testo + immagine'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -86,7 +100,7 @@ function my_acf_init() {
             'icon'				=> 'align-pull-left',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'list',
             'title'				=> __('Lista'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -94,7 +108,7 @@ function my_acf_init() {
             'icon'				=> 'editor-ul',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'card',
             'title'				=> __('Card'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -102,7 +116,7 @@ function my_acf_init() {
             'icon'				=> 'id',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'form',
             'title'				=> __('Form'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -110,7 +124,7 @@ function my_acf_init() {
             'icon'				=> 'forms',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'map',
             'title'				=> __('Mappa'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -118,7 +132,7 @@ function my_acf_init() {
             'icon'				=> 'post-status',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'partner',
             'title'				=> __('Partner'),
             'render_callback'	=> 'my_acf_block_render_callback',
@@ -126,7 +140,7 @@ function my_acf_init() {
             'icon'				=> 'businessman',
         ));
         
-        acf_register_block(array(
+        acf_register_block_type(array(
             'name'				=> 'slider',
             'title'				=> __('Slider'),
             'render_callback'	=> 'my_acf_block_render_callback',

@@ -499,6 +499,10 @@ OLD CONTAINER WITH PADDING
   border-bottom: 1px solid;
   margin-bottom: 20px;
 }
+/*MEDIA TEXT*/
+.wp-block-media-text {
+  margin: 40px 0;
+}
 /*CARD*/
 .c-card {
   position: relative;
