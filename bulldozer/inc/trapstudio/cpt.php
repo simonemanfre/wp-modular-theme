@@ -3,16 +3,16 @@
 function cptui_register_my_cpts() {	
 
 	/**
-	 * Post Type: Example.
+	 * Post Type: Servizi.
     */
 
 	$labels = [
-		"name" => 'Example',
-		"singular_name" => 'Example',
+		"name" => 'Servizi',
+		"singular_name" => 'Servizio',
 	];
 
 	$args = [
-		"label" => 'Example',
+		"label" => 'Servizi',
 		"labels" => $labels,
 		"description" => "",
 		"public" => true,
@@ -34,19 +34,20 @@ function cptui_register_my_cpts() {
 		"supports" => [ "title", "editor", "excerpt", "thumbnail", "revisions", "page-attributes" ],
 	];
 
-	register_post_type( "example", $args );
+	register_post_type( "servizi", $args );
 
 }
 
 add_action( 'init', 'cptui_register_my_cpts' );
 
 
+/*
 function cptui_register_my_taxes() {
 
 	/**
 	 * Taxonomy: Typology.
 	 */
-
+/*
 	$labels = [
 		"name" => 'Example Typology',
 		"singular_name" => 'Example Typology',
@@ -73,3 +74,4 @@ function cptui_register_my_taxes() {
 }
 
 add_action( 'init', 'cptui_register_my_taxes' );
+*/

@@ -3,6 +3,44 @@
     "title": "Intestazione",
     "fields": [
         {
+            "key": "field_5ffb8dfeebad4",
+            "label": "Titolo",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ffb8e08ebad5",
+            "label": "Sottotitolo",
+            "name": "subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5ffb8dd9ebad3",
             "label": "Stile",
             "name": "style",
@@ -81,44 +119,6 @@
             "return_format": "value",
             "ajax": 0,
             "placeholder": ""
-        },
-        {
-            "key": "field_5ffb8dfeebad4",
-            "label": "Titolo",
-            "name": "title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5ffb8e08ebad5",
-            "label": "Sottotitolo",
-            "name": "subtitle",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
@@ -138,5 +138,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1634423010
+    "modified": 1634424877
 }
