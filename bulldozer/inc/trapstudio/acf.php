@@ -77,11 +77,11 @@ function my_acf_init() {
         ));
         
         acf_register_block_type(array(
-            'name'				=> 'image',
-            'title'				=> __('Immagine'),
+            'name'				=> 'link',
+            'title'				=> __('Link Custom'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
-            'icon'				=> 'format-image',
+            'icon'				=> 'admin-links',
         ));
         
         acf_register_block_type(array(
