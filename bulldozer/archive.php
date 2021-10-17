@@ -5,7 +5,7 @@ $post = get_post($news);
 setup_postdata($post);
 ?>
 
-    <div class="l-container">
+    <div class="c-post-content l-container">
         <?php the_content() ?>
     </div>
 

@@ -186,20 +186,8 @@
   }
   /*LAYOUT*/
   .l-container {
-    max-width: 1400px;
     padding-left: 30px;
     padding-right: 30px;
-    margin: 0 auto;
-  }
-  .l-container--small {
-    max-width: 1200px;
-  }
-  .l-container--big {
-    max-width: 1600px;
-  }
-  .l-container--wide,
-  .l-container--fullwidth {
-    max-width: none;
   }
   .l-flex {
     display: flex;
@@ -215,27 +203,25 @@
     gap: 30px;
   }
   /*TIPOGRAFIA*/
-  .t-title1 {
+  .t-title1,
+  .c-post-content h1 {
     font-size: 3rem;
   }
-  .t-title2 {
+  .t-title2,
+  .c-post-content h2 {
     font-size: 2.4rem;
   }
-  .t-title3 {
+  .t-title3,
+  .c-post-content h3 {
     font-size: 1.8rem;
   }
-  .t-title4 {
+  .t-title4,
+  .c-post-content h4 {
     font-size: 1.5rem;
   }
-  .t-title5 {
+  .t-title5,
+  .c-post-content h5 {
     font-size: 1.3rem;
-  }
-  /*COMPONENTI*/
-  .c-title {
-  }
-  .c-subtitle {
-  }
-  .c-button {
   }
   /*HERO*/
   .c-hero {

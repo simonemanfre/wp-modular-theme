@@ -4,7 +4,7 @@ get_header();
 ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-        <div class="l-container l-container--big">
+        <div class="c-post-content l-container l-container--big">
             <?php the_content() ?>
         </div>
         

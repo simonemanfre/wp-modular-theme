@@ -5,8 +5,8 @@
     </header>
 
     <div class="l-container">
-        <article class="c-content">
-            <div class="c-content__text">
+        <article class="c-post-content">
+            <div class="c-post-content__text">
                 <?php if(function_exists('get_field') && get_field('404_text', 'option')):
                     the_field('404_text', 'option');
                 endif; ?>
