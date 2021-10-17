@@ -3,12 +3,12 @@
 
         </main>
         <footer class="c-site-footer">
-            <div class="l-container l-3col">
-                <div class="c-site-footer__address">
+            <div class="l-container l-tablet-flex u-flex-between">
+                <div class="c-site-footer__address u-flex-1">
                     <h3 class="c-title t-title4"><?php bloginfo('name'); ?></h3>
                     <?php the_field('contact_footer', 'option'); ?>
                 </div>
-                <ul class="c-site-footer__contact">
+                <ul class="c-site-footer__contact u-flex-1">
                     <?php if(get_field('contact_tel', 'option')): ?>
                         <li class="c-site-footer__contact__item">
                             <a href="tel:<?php the_field('contact_tel', 'option') ?>"><span class="icon icon-tel"></span> <?php the_field('contact_tel', 'option') ?></a>
@@ -32,7 +32,7 @@
                         </li>
                     <?php endif; ?>
                 </ul>
-                <ul class="c-site-footer__menu">
+                <ul class="c-site-footer__menu u-flex-1">
                     <?php
                     $args = array(
                         'theme_location' => 'Footer',
