@@ -90,7 +90,7 @@ function my_acf_init() {
             'title'				=> __('Galleria Custom WIP'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
-            'icon'				=> 'gallery',
+            'icon'				=> 'format-gallery',
         ));
         
         acf_register_block_type(array(

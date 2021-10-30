@@ -34,6 +34,16 @@ if ( function_exists( 'register_nav_menus' ) ) {
 add_theme_support('post-thumbnails' );
 //add_image_size('customThumbSize', 180, 120, true);
 
+//WIDGET SIDEBAR
+if ( function_exists('register_sidebars') ) {
+	register_sidebar(
+		array(
+			'name' => 'Widget sidebar',
+			'id' => 'widget-sidebar'
+		)
+	);
+}
+
 //CF7
 if (function_exists('wpcf7')) {
 	add_filter('wpcf7_autop_or_not', '__return_false');

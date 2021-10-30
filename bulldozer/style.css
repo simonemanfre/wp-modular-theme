@@ -630,6 +630,9 @@ OLD CONTAINER WITH PADDING
   font-family: "object-fit: cover;";
   transition: 0.3s ease;
 }
+.wp-block-post-featured-image a {
+  display: block;
+}
 .wp-block-post-template .wp-block-post-title,
 .wp-block-query-loop .wp-block-post-title {
   margin-bottom: 12px;
