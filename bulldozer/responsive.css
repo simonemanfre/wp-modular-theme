@@ -231,7 +231,7 @@
     line-height: 3.75rem;
   }
   .c-hero__text .c-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
     line-height: 2rem;
   }
   .c-hero--big {
@@ -308,8 +308,8 @@
   }
   /*UTILITY*/
   .u-width-big {
-    margin-left: -30px;
-    margin-right: -30px;
+    margin-left: -30px !important;
+    margin-right: -30px !important;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -319,8 +319,8 @@
   }
   /*UTILITY*/
   .u-width-big {
-    margin-left: -60px !important;
-    margin-right: -60px !important;
+    margin-left: -80px !important;
+    margin-right: -80px !important;
   }
 }
 /*
