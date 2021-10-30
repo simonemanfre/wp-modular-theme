@@ -64,11 +64,21 @@
     display: grid;
     gap: 20px;
   }
-  .u-grid-3 {
+  .u-grid-3,
+  .columns-3 {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .u-grid-4 {
+  .u-grid-4,
+  .columns-4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .u-grid-5,
+  .columns-5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .u-grid-6,
+  .columns-6 {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   /*LIST*/
   .c-list--2col {
@@ -118,6 +128,7 @@
     color: var(--color-link);
   }
   /*WORDPRESS BLOCKS*/
+  .c-content-block,
   .wp-block-media-text,
   .wp-block-columns {
     margin: 100px 0;
@@ -202,6 +213,10 @@
     display: grid;
     gap: 30px;
   }
+  .u-grid-6,
+  .columns-6 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
   /*TIPOGRAFIA*/
   .t-title1,
   .c-post-content h1 {
@@ -257,12 +272,9 @@
   .c-text-item__footer {
     margin-top: 30px;
   }
-  /*CARD*/
+  /*CARDS*/
   .c-card {
     margin-bottom: 0;
-  }
-  .c-card .c-picture {
-    margin-bottom: 30px;
   }
   .c-card--rounded .c-picture {
     width: 200px;
@@ -271,7 +283,9 @@
   .c-card .c-picture img {
     transition: 0.3s ease;
   }
-  .c-card a:hover .c-picture img {
+  .c-card a:hover .c-picture img,
+  .wp-block-post-template .wp-block-post-featured-image a:hover img,
+  .wp-block-query-loop .wp-block-post-featured-image a:hover img {
     transform: scale(1.2);
   }
   /*LIST*/

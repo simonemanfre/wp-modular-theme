@@ -117,6 +117,16 @@ function my_acf_init() {
             'icon'				=> 'id',
         ));
         
+        /*
+        acf_register_block_type(array(
+            'name'				=> 'posts',
+            'title'				=> __('Articoli'),
+            'render_callback'	=> 'my_acf_block_render_callback',
+            'category'			=> 'custom',
+            'icon'				=> 'post',
+        ));
+        */
+        
         acf_register_block_type(array(
             'name'				=> 'form',
             'title'				=> __('Form'),
