@@ -33,7 +33,7 @@ function my_acf_init() {
                 'mode' => false,
                 'jsx' => true
             ),
-            'icon'				=> 'cover-image', //https://developer.wordpress.org/resource/dashicons/
+            'icon'				=> 'layout', //https://developer.wordpress.org/resource/dashicons/
         ));
 
         acf_register_block_type(array(
@@ -41,12 +41,12 @@ function my_acf_init() {
             'title'				=> __('Hero'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
-            'icon'				=> 'cover-image', //https://developer.wordpress.org/resource/dashicons/
+            'icon'				=> 'cover-image',
         ));
         
         acf_register_block_type(array(
             'name'				=> 'page-header',
-            'title'				=> __('Page Header'),
+            'title'				=> __('Page Header WIP'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'welcome-widgets-menus',
@@ -67,14 +67,7 @@ function my_acf_init() {
             'category'			=> 'custom',
             'icon'				=> 'heading',
         ));
-        
-        acf_register_block_type(array(
-            'name'				=> 'text',
-            'title'				=> __('Blocco di testo'),
-            'render_callback'	=> 'my_acf_block_render_callback',
-            'category'			=> 'custom',
-            'icon'				=> 'editor-alignleft',
-        ));
+
         
         acf_register_block_type(array(
             'name'				=> 'link',
@@ -86,15 +79,23 @@ function my_acf_init() {
         
         acf_register_block_type(array(
             'name'				=> 'video',
-            'title'				=> __('Video'),
+            'title'				=> __('Video WIP'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'format-video',
         ));
         
         acf_register_block_type(array(
+            'name'				=> 'gallery',
+            'title'				=> __('Galleria Custom WIP'),
+            'render_callback'	=> 'my_acf_block_render_callback',
+            'category'			=> 'custom',
+            'icon'				=> 'gallery',
+        ));
+        
+        acf_register_block_type(array(
             'name'				=> 'media-text',
-            'title'				=> __('Blocco testo + immagine'),
+            'title'				=> __('Blocco testo + immagine WIP'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'align-pull-left',
@@ -102,7 +103,7 @@ function my_acf_init() {
         
         acf_register_block_type(array(
             'name'				=> 'list',
-            'title'				=> __('Lista'),
+            'title'				=> __('Lista WIP'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'editor-ul',
@@ -110,7 +111,7 @@ function my_acf_init() {
         
         acf_register_block_type(array(
             'name'				=> 'cards',
-            'title'				=> __('Card'),
+            'title'				=> __('Cards'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'id',
@@ -126,7 +127,7 @@ function my_acf_init() {
         
         acf_register_block_type(array(
             'name'				=> 'partner',
-            'title'				=> __('Partner'),
+            'title'				=> __('Partner WIP'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'businessman',
@@ -134,7 +135,7 @@ function my_acf_init() {
         
         acf_register_block_type(array(
             'name'				=> 'slider',
-            'title'				=> __('Slider'),
+            'title'				=> __('Slider WIP'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'slides',
