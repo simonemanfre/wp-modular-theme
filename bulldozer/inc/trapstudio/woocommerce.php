@@ -10,8 +10,8 @@ function woocommerce_support() {
 add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 
 function new_loop_shop_per_page( $cols ) {
-$cols = -1;
-return $cols;
+    $cols = -1;
+    return $cols;
 }
 
 //WOOCOMMERCE CHECKBOX PRIVACY

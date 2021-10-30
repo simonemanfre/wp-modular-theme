@@ -11,7 +11,7 @@ require_once(THEME_DIR . 'inc/trapstudio/backoffice.php');
 require_once(THEME_DIR . 'inc/trapstudio/cpt.php');
 
 //DISABLE COMMENTS
-require_once(THEME_DIR . 'inc/trapstudio/comments.php');
+//require_once(THEME_DIR . 'inc/trapstudio/comments.php');
 
 //ACF
 if( function_exists('acf_add_options_page') ):
