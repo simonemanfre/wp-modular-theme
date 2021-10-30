@@ -11,6 +11,7 @@ add_filter('upload_mimes', 'cc_mime_types');
 //ADMIN STYLE E SCRIPT
 function admin_scripts() {
     wp_enqueue_style( 'admin', get_template_directory_uri() . '/assets/css/admin.css', array(), null);
+    wp_enqueue_script( 'adminScripts', get_template_directory_uri() . "/assets/js/admin.js", array('jquery'), '1.0', true);
 }
 add_action( 'admin_enqueue_scripts', 'admin_scripts' );
 

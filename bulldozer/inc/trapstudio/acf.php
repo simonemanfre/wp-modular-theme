@@ -4,8 +4,7 @@
 //add_filter('acf/settings/show_admin', '__return_false');
 
 // PAGE OPTION
-$dati_tema = wp_get_theme();
-$title_option_page = 'Opzioni '.$dati_tema->Name;
+$title_option_page = 'Opzioni '.get_bloginfo('name');
 
 acf_add_options_sub_page(array(
     'page_title' 	    => $title_option_page,
@@ -46,7 +45,7 @@ function my_acf_init() {
         
         acf_register_block_type(array(
             'name'				=> 'page-header',
-            'title'				=> __('Page Header WIP'),
+            'title'				=> __('WIP Page Header'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'welcome-widgets-menus',
@@ -79,7 +78,7 @@ function my_acf_init() {
         
         acf_register_block_type(array(
             'name'				=> 'video',
-            'title'				=> __('Video WIP'),
+            'title'				=> __('WIP Video'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'format-video',
@@ -87,23 +86,15 @@ function my_acf_init() {
         
         acf_register_block_type(array(
             'name'				=> 'gallery',
-            'title'				=> __('Galleria Custom WIP'),
+            'title'				=> __('WIP Galleria Custom'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'format-gallery',
         ));
         
         acf_register_block_type(array(
-            'name'				=> 'media-text',
-            'title'				=> __('Blocco testo + immagine WIP'),
-            'render_callback'	=> 'my_acf_block_render_callback',
-            'category'			=> 'custom',
-            'icon'				=> 'align-pull-left',
-        ));
-        
-        acf_register_block_type(array(
             'name'				=> 'list',
-            'title'				=> __('Lista WIP'),
+            'title'				=> __('WIP Lista'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'editor-ul',
@@ -117,16 +108,6 @@ function my_acf_init() {
             'icon'				=> 'id',
         ));
         
-        /*
-        acf_register_block_type(array(
-            'name'				=> 'posts',
-            'title'				=> __('Articoli'),
-            'render_callback'	=> 'my_acf_block_render_callback',
-            'category'			=> 'custom',
-            'icon'				=> 'post',
-        ));
-        */
-        
         acf_register_block_type(array(
             'name'				=> 'form',
             'title'				=> __('Form'),
@@ -137,7 +118,7 @@ function my_acf_init() {
         
         acf_register_block_type(array(
             'name'				=> 'partner',
-            'title'				=> __('Partner WIP'),
+            'title'				=> __('WIP Partner'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'businessman',
@@ -145,7 +126,7 @@ function my_acf_init() {
         
         acf_register_block_type(array(
             'name'				=> 'slider',
-            'title'				=> __('Slider WIP'),
+            'title'				=> __('WIP Slider'),
             'render_callback'	=> 'my_acf_block_render_callback',
             'category'			=> 'custom',
             'icon'				=> 'slides',
@@ -161,7 +142,7 @@ function bulldozer_block_categories( $categories, $post ) {
 		array(
             array(
                 'slug' => 'custom',
-                'title' => __( 'Custom Blocks', 'bulldozer' ),
+                'title' => get_bloginfo('name'),
                 'icon'  => 'wordpress',
             ),
         ),
