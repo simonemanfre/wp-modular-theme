@@ -100,17 +100,21 @@ body .c-button--ghost:hover {
 .c-text-item--inline .c-text-item__header {
   border-color: var(--color-primary);
 }
-/*RESET*/
+/*RESET + STICKY FOOTER*/
 body {
+  display: flex;
+  min-height: 100vh;
   line-height: 1.4;
   font-weight: 400;
   margin: 0;
+  flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .l-main {
   width: 100%;
   padding-bottom: 50px;
+  flex: 1;
   overflow-x: hidden;
 }
 * {
