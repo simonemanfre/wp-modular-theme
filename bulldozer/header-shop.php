@@ -96,10 +96,13 @@
                 </ul>
             </nav> 
 
-            <?php if( class_exists('woocommerce') ): ?>
+            <?php if( class_exists('woocommerce') ): ?> 
+                <!-- 
+                TODO MINI CART
                 <div class="widget_shopping_cart_content">
-                    <?php //woocommerce_mini_cart(); ?>
+                    <?php woocommerce_mini_cart(); ?>
                 </div>
+                 -->
             <?php endif; ?>
         </div>
     </header>
