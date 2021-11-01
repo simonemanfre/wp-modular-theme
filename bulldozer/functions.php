@@ -38,8 +38,20 @@ add_theme_support('post-thumbnails' );
 if ( function_exists('register_sidebars') ) {
 	register_sidebar(
 		array(
-			'name' => 'Widget sidebar',
-			'id' => 'widget-sidebar'
+			'name' => 'Sidebar 1',
+			'id' => 'sidebar-1'
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => 'Sidebar 2',
+			'id' => 'sidebar-2'
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => 'Sidebar 3',
+			'id' => 'sidebar-3'
 		)
 	);
 }
