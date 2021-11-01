@@ -207,7 +207,6 @@ iframe {
 .wp-block-columns {
   margin: 40px 0;
 }
-.c-content-block:first-child,
 .c-block-header + .c-content-block {
   margin-top: 0 !important;
 }

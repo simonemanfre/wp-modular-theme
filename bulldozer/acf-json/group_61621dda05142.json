@@ -84,7 +84,15 @@
             "type": "file",
             "instructions": "Immagine o Video, se vuoto verrà usata l'immagine in evidenza.",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_617df85da3b6f",
+                        "operator": "!=",
+                        "value": "none"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -103,7 +111,15 @@
             "type": "text",
             "instructions": "Se vuoto verrà usato il Titolo del post.",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_617df85da3b6f",
+                        "operator": "!=",
+                        "value": "none"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -122,7 +138,15 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_617df85da3b6f",
+                        "operator": "!=",
+                        "value": "none"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -141,7 +165,20 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_617df85da3b6f",
+                        "operator": "==",
+                        "value": "hero"
+                    },
+                    {
+                        "field": "field_617df7bddc05f",
+                        "operator": "==",
+                        "value": "big"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "50",
                 "class": "",
@@ -160,7 +197,20 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_617df85da3b6f",
+                        "operator": "==",
+                        "value": "hero"
+                    },
+                    {
+                        "field": "field_617df7bddc05f",
+                        "operator": "==",
+                        "value": "big"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "50",
                 "class": "",
@@ -206,6 +256,49 @@
             "ui": 0,
             "ui_on_text": "",
             "ui_off_text": ""
+        },
+        {
+            "key": "field_617f4e67e216c",
+            "label": "Sidebar",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_617f4e73e216d",
+            "label": "Sidebar laterale",
+            "name": "page_sidebar",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "Nessuna Sidebar",
+                "sidebar-1": "Sidebar 1",
+                "sidebar-2": "Sidebar 2",
+                "sidebar-3": "Sidebar 3"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -239,5 +332,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1635647447
+    "modified": 1635733521
 }
