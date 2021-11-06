@@ -974,6 +974,9 @@ textarea::-webkit-input-placeholder {
   -webkit-box-align: end !important;
   -ms-flex-align: end !important;
 }
+.u-flex-reverse {
+  flex-direction: row-reverse;
+}
 .u-flex-1 {
   flex: 1 !important;
 }

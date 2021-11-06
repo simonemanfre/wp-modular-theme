@@ -118,6 +118,13 @@
     left: 0;
     max-width: 220px;
   }
+  /*SIDEBAR*/
+  .c-sidebar {
+    margin-left: 40px;
+  }
+  .u-flex-reverse .c-sidebar {
+    margin-right: 40px;
+  }
 }
 @media screen and (min-width: 1024px) {
   /*CSS CUSTOM PROPERTIES*/
