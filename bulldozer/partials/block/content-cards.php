@@ -6,7 +6,7 @@
 
 <?php $cards = get_field('cards'); ?>
 
-<section class="c-content-block l-tablet-grid <?php the_field('width') ?> <?php the_field('column') ?>">
+<section class="c-content-block l-tablet-grid <?php the_field('width') ?> <?php the_field('column') ?> <?php the_field('margin') ?>">
     <?php foreach($cards as $item): ?>
 
         <article class="c-card c-card--<?php the_field('style') ?>">

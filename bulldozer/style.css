@@ -202,16 +202,9 @@ iframe {
   text-align: center;
 }
 /*WORDPRESS BLOCKS*/
-.c-content-block,
 .wp-block-media-text,
 .wp-block-columns {
   margin: 40px 0;
-}
-.c-block-header + .c-content-block {
-  margin-top: 0 !important;
-}
-.c-content-block:last-child {
-  margin-bottom: 0 !important;
 }
 /*HEADER*/
 body.j-menu-open {
@@ -904,6 +897,20 @@ textarea::-webkit-input-placeholder {
   font-size: 0.86rem;
 }
 /*UTILITY*/
+.u-margin {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.u-margin-top {
+  margin-top: 40px;
+}
+.u-margin-bottom {
+  margin-bottom: 40px;
+}
+.u-no-margin {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
 .u-full {
   width: 100% !important;
 }

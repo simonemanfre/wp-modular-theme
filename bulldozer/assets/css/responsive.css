@@ -128,7 +128,6 @@
     color: var(--color-link);
   }
   /*WORDPRESS BLOCKS*/
-  .c-content-block,
   .wp-block-media-text,
   .wp-block-columns {
     margin: 100px 0;
@@ -321,6 +320,16 @@
     margin-top: 60px;
   }
   /*UTILITY*/
+  .u-margin {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .u-margin-top {
+    margin-top: 100px;
+  }
+  .u-margin-bottom {
+    margin-bottom: 100px;
+  }
   .u-width-big {
     margin-left: -30px !important;
     margin-right: -30px !important;
